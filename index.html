@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeeTime</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body
+    class="relative flex min-h-screen flex-col bg-neutral-50 justify-between overflow-x-hidden"
+    style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+  >
+    <!-- Header -->
+    <header class="flex items-center bg-neutral-50 p-4 pb-2 justify-between">
+      <h2 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">TeeTime</h2>
+      <div class="flex w-12 items-center justify-end">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+          <path
+            d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="flex flex-col gap-6 items-center justify-center text-center min-h-[480px] bg-cover bg-center p-4"
+      style='background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAJRfWdhTC8WBXy53Puivh_jrOXOmCrRrHfnnNwg9LJh7XE1HurxoYWhVWA2R-fZCuImpqp-q1bdg4UtwYosM39BbEI_da5rzAMF3sWq-pbtuO6FSIjHr0gMnFtBhuIh-tYhxjpqix4I71N6haHfV3nzGKTl4aHkflB1vbunXjshZdWesr_nn0jAXQfM5rqbl3DSFRD5zxZtgNj2lJFgI87VO1XfJv2UiBr3tXkIpXTMsDJuOOv7OVLYdEtoFGVQnDsHwyz2alUfEqs");'
+    >
+      <h1 class="text-white text-4xl font-black">Express Yourself</h1>
+      <h2 class="text-white text-base">Find the perfect tee to match your unique style.</h2>
+      <a
+        href="#shop"
+        class="mt-2 bg-[#141414] text-white font-bold px-5 py-2 rounded-lg"
+        >Shop Now</a
+      >
+    </section>
+
+    <!-- Trending Tees -->
+    <section id="shop" class="px-4 py-5">
+      <h2 class="text-[#141414] text-2xl font-bold mb-4">Trending Tees</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Item 1 -->
+        <div>
+          <div
+            class="aspect-square bg-cover bg-center rounded-lg"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXf2ttRH3E70skKrUeq5UAQI7FzyNEd85b_hHXnSGCCBxqc3ueN8Dd5eF8of-Gf_wh4GwKFxTwGqUd6cnxbGF3QPEPSD_5edF_MTBwdOsrpKuapdLQzy5b9eKSAmd92PuZKlgWBSb99JqvbWaCmGF_JnLDQ0b7o5rFOi79czaK6vSewkKvHKMwiJubh6VcUTj5TRv10XUj3emzc_fSYrPrc08oisBTUg9_uBIb3FzkePdKoLGNX3NuP0IEk6v4mSRLjDw1SvEQlgCP");'
+          ></div>
+          <p class="mt-2 font-medium">Graphic Tee</p>
+          <p class="text-sm text-neutral-500">Cool design</p>
+        </div>
+        <!-- Item 2 -->
+        <div>
+          <div
+            class="aspect-square bg-cover bg-center rounded-lg"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdE5vDUynwTH8cSE-s7PrFmWRk6i6QV30kl-1glZNB__Vv4fqJHQNqYTAGho_rwBsjpKvDMKcex5tI_-isH36Th2aAJiQoZf_lyZZnGtg4-EsMH8wdg5vqVx4q6HkUinZHDAIcQ_WKXX7YQqJmjr39kfF2UJjeI5uVF8zPwTSXxvqjBkmGFBTAaxNwUj5shlKQRBUEeMZsJJdcQkWI9OW9KoKr53A1EFCqSSjBWFWkqD5iGstisYqcwzcfcD6yqkZEndpYzLLfundr");'
+          ></div>
+          <p class="mt-2 font-medium">Vintage Tee</p>
+          <p class="text-sm text-neutral-500">Retro vibes</p>
+        </div>
+        <!-- Item 3 -->
+        <div>
+          <div
+            class="aspect-square bg-cover bg-center rounded-lg"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBcetq7b9iJf-rS0V_YGHV6L1Gj3OmgYO-aAw3g3fwa8HnEJCQ3144Q5ADrMTFHigmFHpNC3N9m02B8V1CsRrDyt6Ck-PObK0Rh5ASfYCqQKDaqMFtn-q0jZYG5sOljRcWtOc9CBQuGRRCxQ9RiqOxU4fbTR3pBH9y2HXRFjeEkEMxxoilIR9y-mRq8enqzz9wNI2RW7JjfaH3ffWwzh10w0u3EaTcwarxXdkITMk6OR-1ApFh5Er5sgdUMywv_W-KXOA_vj_IsyvFk");'
+          ></div>
+          <p class="mt-2 font-medium">Minimalist Tee</p>
+          <p class="text-sm text-neutral-500">Simple and clean</p>
+        </div>
+        <!-- Item 4 -->
+        <div>
+          <div
+            class="aspect-square bg-cover bg-center rounded-lg"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANR0VLkXhhMFVszSOlv3IfCEzIOU0C0cRRucyJZKInea6X4rY4jV2vCd7HEh2gljO9UygZD7NHSHjmNfRC_gnPSt7-C7eFLPEgNp3u7bGW8GFuaoMvsakUG3JeEpFtgQz5Cue0stt1bBimv21TVXcjUYNs_BR5FspCO6OkVQFxGJvAeeaxVgsF3fkRsy0EVc2Aaj6bo-OSwFA-q52kZSKZYAO4g1XF6hfcbXrkPI22bs8mBVhIE1WnmRos1Npsxv-hWuwArN1B9tp0");'
+          ></div>
+          <p class="mt-2 font-medium">Statement Tee</p>
+          <p class="text-sm text-neutral-500">Bold message</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-neutral-500 text-sm py-4">
+      &copy; 2025 TeeTime. All rights reserved.
+    </footer>
+  </body>
+</html>
