@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Style</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .product {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: calc(33.333% - 20px);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .product h3 {
+      margin: 15px;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .product p {
+      margin: 0 15px 15px;
+      color: #777;
+      font-size: 0.95em;
+    }
+
+    @media screen and (max-width: 768px) {
+      .product {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .product {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Style Page</h1>
+  </header>
+  <div class="container">
+    <p>This file only contains CSS styles for use in other HTML pages.</p>
+  </div>
+</body>
+</html>
